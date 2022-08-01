@@ -5,6 +5,7 @@ struct HomeView: View {
 
     @State private var citySearchIsPresented = false
     @State private var newPlace: Place?
+    @State private var units: TemperatureUnit = .fahrenheit
 
     var body: some View {
         NavigationView {
@@ -15,7 +16,12 @@ struct HomeView: View {
 
                 List {
                     ForEach(viewModel.savedPlaces) { place in
-                        Text(place.city)
+                        NavigationLink {
+                            Text(place.city)
+                        } label: {
+                            CityForecastView(units: $units)
+                                .environmentObject(CityForecastViewModel(place: place))
+                        }
                     }
                     .onDelete { indexSet in
                         viewModel.delete(at: indexSet)
@@ -40,8 +46,8 @@ struct HomeView: View {
                 .environmentObject(CitySearchViewModel())
             }
             .onChange(of: newPlace) { newValue in
-                if let ugh = newValue {
-                    viewModel.saveNewPlace(place: ugh)
+                if let newValue = newValue {
+                    viewModel.saveNewPlace(place: newValue)
                     newPlace = nil
                 }
             }
