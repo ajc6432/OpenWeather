@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		4C4258B02897797C00A79CBE /* OpenWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4258AF2897797C00A79CBE /* OpenWeatherApp.swift */; };
-		4C4258B22897797C00A79CBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4258B12897797C00A79CBE /* ContentView.swift */; };
+		4C4258B22897797C00A79CBE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4258B12897797C00A79CBE /* HomeView.swift */; };
 		4C4258B42897797D00A79CBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4258B32897797D00A79CBE /* Assets.xcassets */; };
 		4C4258B72897797D00A79CBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4258B62897797D00A79CBE /* Preview Assets.xcassets */; };
+		4CD42B4728977A0000D1CE16 /* CitySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD42B4628977A0000D1CE16 /* CitySearchView.swift */; };
+		4CD42B4928977A1400D1CE16 /* CitySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD42B4828977A1400D1CE16 /* CitySearchViewModel.swift */; };
+		4CD42B4B28977A2200D1CE16 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD42B4A28977A2200D1CE16 /* Place.swift */; };
+		4CD42B4D28977A2C00D1CE16 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD42B4C28977A2C00D1CE16 /* Asset.swift */; };
+		4CD42B4F28977A3800D1CE16 /* LocalSearchAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD42B4E28977A3800D1CE16 /* LocalSearchAdapter.swift */; };
+		4CD42B5128977A5000D1CE16 /* MKMapItem_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD42B5028977A5000D1CE16 /* MKMapItem_Extension.swift */; };
+		4CD42B5428977A6600D1CE16 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD42B5328977A6600D1CE16 /* MapKit.framework */; };
+		4CD42B5628977A6C00D1CE16 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD42B5528977A6C00D1CE16 /* CoreLocation.framework */; };
+		4CD42B5828977C3200D1CE16 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD42B5728977C3200D1CE16 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C4258AC2897797C00A79CBE /* OpenWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4258AF2897797C00A79CBE /* OpenWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherApp.swift; sourceTree = "<group>"; };
-		4C4258B12897797C00A79CBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4C4258B12897797C00A79CBE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4C4258B32897797D00A79CBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C4258B62897797D00A79CBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4CD42B4628977A0000D1CE16 /* CitySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchView.swift; sourceTree = "<group>"; };
+		4CD42B4828977A1400D1CE16 /* CitySearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewModel.swift; sourceTree = "<group>"; };
+		4CD42B4A28977A2200D1CE16 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		4CD42B4C28977A2C00D1CE16 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		4CD42B4E28977A3800D1CE16 /* LocalSearchAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchAdapter.swift; sourceTree = "<group>"; };
+		4CD42B5028977A5000D1CE16 /* MKMapItem_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapItem_Extension.swift; sourceTree = "<group>"; };
+		4CD42B5328977A6600D1CE16 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4CD42B5528977A6C00D1CE16 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4CD42B5728977C3200D1CE16 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD42B5628977A6C00D1CE16 /* CoreLocation.framework in Frameworks */,
+				4CD42B5428977A6600D1CE16 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +57,7 @@
 			children = (
 				4C4258AE2897797C00A79CBE /* OpenWeather */,
 				4C4258AD2897797C00A79CBE /* Products */,
+				4CD42B5228977A6600D1CE16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +72,12 @@
 		4C4258AE2897797C00A79CBE /* OpenWeather */ = {
 			isa = PBXGroup;
 			children = (
-				4C4258AF2897797C00A79CBE /* OpenWeatherApp.swift */,
-				4C4258B12897797C00A79CBE /* ContentView.swift */,
 				4C4258B32897797D00A79CBE /* Assets.xcassets */,
 				4C4258B52897797D00A79CBE /* Preview Content */,
+				4CD42B5E28977CAC00D1CE16 /* UI */,
+				4CD42B5D28977CA100D1CE16 /* Adapters */,
+				4CD42B5F28977CC100D1CE16 /* Models */,
+				4CD42B5B28977C9500D1CE16 /* Utilities */,
 			);
 			path = OpenWeather;
 			sourceTree = "<group>";
@@ -65,6 +88,76 @@
 				4C4258B62897797D00A79CBE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4CD42B5228977A6600D1CE16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CD42B5528977A6C00D1CE16 /* CoreLocation.framework */,
+				4CD42B5328977A6600D1CE16 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CD42B5928977C3800D1CE16 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4C4258B12897797C00A79CBE /* HomeView.swift */,
+				4CD42B5728977C3200D1CE16 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4CD42B5A28977C4300D1CE16 /* CitySearch */ = {
+			isa = PBXGroup;
+			children = (
+				4CD42B4628977A0000D1CE16 /* CitySearchView.swift */,
+				4CD42B4828977A1400D1CE16 /* CitySearchViewModel.swift */,
+			);
+			path = CitySearch;
+			sourceTree = "<group>";
+		};
+		4CD42B5B28977C9500D1CE16 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4CD42B4C28977A2C00D1CE16 /* Asset.swift */,
+				4CD42B5C28977C9B00D1CE16 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4CD42B5C28977C9B00D1CE16 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4CD42B5028977A5000D1CE16 /* MKMapItem_Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4CD42B5D28977CA100D1CE16 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				4CD42B4E28977A3800D1CE16 /* LocalSearchAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		4CD42B5E28977CAC00D1CE16 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4C4258AF2897797C00A79CBE /* OpenWeatherApp.swift */,
+				4CD42B5928977C3800D1CE16 /* Home */,
+				4CD42B5A28977C4300D1CE16 /* CitySearch */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4CD42B5F28977CC100D1CE16 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CD42B4A28977A2200D1CE16 /* Place.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +230,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C4258B22897797C00A79CBE /* ContentView.swift in Sources */,
+				4CD42B4D28977A2C00D1CE16 /* Asset.swift in Sources */,
+				4CD42B5828977C3200D1CE16 /* HomeViewModel.swift in Sources */,
+				4C4258B22897797C00A79CBE /* HomeView.swift in Sources */,
+				4CD42B4728977A0000D1CE16 /* CitySearchView.swift in Sources */,
 				4C4258B02897797C00A79CBE /* OpenWeatherApp.swift in Sources */,
+				4CD42B4F28977A3800D1CE16 /* LocalSearchAdapter.swift in Sources */,
+				4CD42B5128977A5000D1CE16 /* MKMapItem_Extension.swift in Sources */,
+				4CD42B4928977A1400D1CE16 /* CitySearchViewModel.swift in Sources */,
+				4CD42B4B28977A2200D1CE16 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +373,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -284,7 +385,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,6 +403,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -313,7 +415,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
