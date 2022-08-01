@@ -13,9 +13,15 @@ struct CityForecastView: View {
 
             ZStack {
                 if viewModel.isLoading {
-                    ProgressView()
-                        .progressViewStyle(.circular)
-                        .scaleEffect(3)
+                    HStack {
+                        Spacer()
+
+                        ProgressView()
+                            .progressViewStyle(.circular)
+                            .scaleEffect(3)
+
+                        Spacer()
+                    }
                 }
 
                 if let weatherForecast = viewModel.forecast {
@@ -42,6 +48,11 @@ struct CityForecastView: View {
         .onAppear {
             Task {
                 await viewModel.fetchWeatherForecast(units: units)
+            }
+        }
+        .onChange(of: units) { newValue in
+            Task {
+                await viewModel.fetchWeatherForecast(units: newValue)
             }
         }
     }

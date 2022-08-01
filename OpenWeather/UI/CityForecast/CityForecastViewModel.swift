@@ -17,10 +17,10 @@ class CityForecastViewModel: ObservableObject {
     func fetchWeatherForecast(units: TemperatureUnit) async {
         isLoading = true
         do {
-            let current = try await forecastService.getCurrentForecast(lat: place.latitude,
+            let currentForecast = try await forecastService.getCurrentForecast(lat: place.latitude,
                                                                        lon: place.longitude,
                                                                        temperatureUnit: units)
-            self.forecast = current.forecast
+            self.forecast = currentForecast.current
             self.isLoading = false
         } catch {
             // handle error with published var and alert in ui

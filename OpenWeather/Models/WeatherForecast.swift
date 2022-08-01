@@ -21,7 +21,7 @@ struct WeatherForecast: Codable, Hashable {
             return .fog
         case 800:
             return .clear
-        case 802:
+        case 801...809:
             return .clouds
         default:
             return .generic
